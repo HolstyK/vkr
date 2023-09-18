@@ -1,0 +1,86 @@
+/* Общие стили, которые будут применяться для всех медиа-типов */
+body {
+    margin: 10px;
+    background-image: url('1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+}
+
+div {
+    border: solid 1px #fff;
+    padding: 10px;
+}
+
+.top {
+    height: 100px;
+    width: 100%;
+    background-color: rgba(51, 51, 51, 0.7);
+    text-align: center;
+    line-height: 100px;
+}
+
+.left {
+    width: 200px;
+    float: left;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.main {
+    margin-left: 220px;
+    margin-top: 10px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    border: 1px solid #fff;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: rgba(51, 51, 51, 0.7);
+    color: #fff;
+}
+
+td {
+    background-color: rgba(51, 51, 51, 0.5);
+}
+
+/* Медиазапрос для экрана (screen) */
+@media screen {
+    body {
+        font-family: 'Courier New', Courier, monospace; /* Пример стиля для шрифта на экране */
+    }
+
+    h1 {
+        font-size: 24px; /* Пример стиля для заголовков на экране */
+    }
+}
+
+/* Медиазапрос для печати (print) */
+@media print {
+    body {
+        background-color: white; /* Пример стиля для фона при печати */
+    }
+
+    h1 {
+        font-size: 18px; /* Пример стиля для заголовков при печати */
+    }
+}
+
+/* Медиазапрос для устройств сенсорного управления (handheld) */
+@media handheld {
+    body {
+        font-size: 16px; /* Пример стиля для шрифта на устройствах сенсорного управления */
+    }
+
+    h1 {
+        font-size: 22px; /* Пример стиля для заголовков на устройствах сенсорного управления */
+    }
+}
