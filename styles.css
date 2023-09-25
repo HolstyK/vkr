@@ -57,10 +57,6 @@ td {
     body {
         font-family: 'Courier New', Courier, monospace; /* Пример стиля для шрифта на экране */
     }
-
-    h1 {
-        font-size: 24px; /* Пример стиля для заголовков на экране */
-    }
 }
 
 /* Медиазапрос для печати (print) */
