@@ -62,7 +62,7 @@ td {
 /* Медиазапрос для печати (print) */
 @media print {
     body {
-        background-color: white; /* Пример стиля для фона при печати */
+        background-color: black; /* Пример стиля для фона при печати */
     }
 }
 
