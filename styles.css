@@ -1,10 +1,9 @@
 /* Общие стили, которые будут применяться для всех медиа-типов */
 body {
     margin: 10px;
-    background-image: url('1.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-color: #000; /* Убрать фоновое изображение */
     color: #fff;
+    font-size: 16px; /* Уменьшить размер шрифта */
 }
 
 div {
@@ -13,22 +12,18 @@ div {
 }
 
 .top {
-    height: 100px;
-    width: 100%;
-    background-color: rgba(51, 51, 51, 0.7);
-    text-align: center;
-    line-height: 100px;
+    height: 60px; /* Уменьшить высоту шапки */
+    line-height: 60px;
 }
 
 .left {
-    width: 200px;
-    float: left;
-    margin-top: 10px;
-    margin-right: 10px;
+    width: 100%; /* Занимаем всю ширину экрана на мобильных устройствах */
+    float: none;
+    margin-right: 0;
 }
 
 .main {
-    margin-left: 220px;
+    margin-left: 0;
     margin-top: 10px;
 }
 
@@ -52,44 +47,23 @@ td {
     background-color: rgba(51, 51, 51, 0.5);
 }
 
-/* Медиазапрос для экрана (screen) */
-@media screen {
+/* Медиазапрос для устройств сенсорного управления (handheld) */
+@media screen and (max-width: 767px) {
     body {
-        font-family: 'Courier New', Courier, monospace; /* Пример стиля для шрифта на экране */
+        font-size: 14px; /* Уменьшить размер шрифта для мобильных устройств */
     }
 }
 
 /* Медиазапрос для печати (print) */
 @media print {
     body {
-        background-color: black; /* Пример стиля для фона при печати */
+        background-color: white;
     }
 }
 
-/* Медиазапрос для устройств сенсорного управления (handheld) */
-@media handheld {
+/* Медиазапрос для экрана (screen) */
+@media screen {
     body {
-        font-size: 16px; /* Пример стиля для шрифта на устройствах сенсорного управления */
-        background-color: rgba(0, 0, 0, 0.9); /* Пример стиля фона для устройств сенсорного управления */
-    }
-
-    h1 {
-        font-size: 22px; /* Пример стиля для заголовков на устройствах сенсорного управления */
-    }
-
-    .top {
-        height: 60px; /* Уменьшим высоту верхней панели */
-        line-height: 60px; /* Изменим высоту линии верхней панели */
-    }
-
-    .left {
-        width: 100%; /* Занимаем всю ширину экрана на устройствах сенсорного управления */
-        float: none; /* Отменяем плавание */
-        margin-right: 0; /* Убираем правый отступ */
-    }
-
-    .main {
-        margin-left: 0; /* Убираем левый отступ */
-        margin-top: 10px;
+        font-family: 'Courier New', Courier, monospace;
     }
 }
