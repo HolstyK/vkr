@@ -73,6 +73,9 @@ td {
         font-size: 18px;
     }
 }
+/* Медиазапрос для устройств сенсорного управления (handheld) */
+/* Медиазапрос для устройств сенсорного управления (handheld) */
+/* ... Ваши текущие стили ... */
 
 /* Медиазапрос для устройств сенсорного управления (handheld) */
 @media screen and (max-width: 767px) {
@@ -94,11 +97,13 @@ td {
         width: 100%;
         float: none;
         margin-right: 0;
+        overflow: auto;
     }
 
     .main {
         margin-left: 0;
         margin-top: 10px;
+        overflow: auto;
     }
 
     h2 {
@@ -111,10 +116,79 @@ td {
 
     table {
         font-size: 16px;
+        border-collapse: collapse;
+        width: 100%;
     }
+
+    th, td {
+        border: 1px solid #fff;
+        padding: 8px;
+        text-align: left;
+    }
+
+    th {
+        background-color: rgba(51, 51, 51, 0.7);
+        color: #fff;
+    }
+
+    td {
+        background-color: rgba(51, 51, 51, 0.5);
+    }
+
+    /* Скрываем первую строку таблицы */
+    table tr:first-child {
+        display: none;
+    }
+
+    /* Изменяем текст в каждой ячейке */
+   table th:nth-child(1)::before { content: ''; }
+    table th:nth-child(2)::before { content: 'Описание'; }
+    table th:nth-child(3)::before { content: ''; }
+    table th:nth-child(4)::before { content: 'Диапазон (женский)'; }
     
-    /* Добавляем свойство overflow для блоков "О теме" и "Как это работает" */
-    .left, .main {
-        overflow: auto;
+    table td:nth-child(1)::before { content: 'Характеристика: '; }
+    table td:nth-child(1)::after { content: ''; }
+    table td:nth-child(2)::before { content: 'Описание: '; }
+    table td:nth-child(2)::after { content: ''; }
+    
+    table td:nth-child(3)::before { content: 'Мужской диапазон: '; }
+    table td:nth-child(3)::after { content: ''; }
+    table td:nth-child(4)::before { content: 'Женский диапазон: '; }
+    table td:nth-child(4)::after { content: ''; }
+    
+    table td:nth-child(5)::before { content: ''; }
+    table td:nth-child(5)::after { content: ''; }
+    table td:nth-child(6)::before { content: ''; }
+    table td:nth-child(6)::after { content: ''; }
+    
+    table td:nth-child(7)::before { content: ''; }
+    table td:nth-child(7)::after { content: ''; }
+    table td:nth-child(8)::before { content: ''; }
+    table td:nth-child(8)::after { content: ''; }
+
+    /* Добавляем стили для стекающейся таблицы */
+    table {
+        display: block;
+    }
+
+    table tr {
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    table th, table td {
+        display: block;
+        text-align: center;
+    }
+
+    table th {
+        background-color: rgba(51, 51, 51, 0.7);
+        color: #fff;
+    }
+
+    table td {
+        background-color: rgba(51, 51, 51, 0.5);
     }
 }
+
+
