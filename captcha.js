@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (userAnswer === captchaAnswer) {
       // Если пользователь правильно решил капчу, перенаправляем на основной сайт
-      window.location.href = 'site.html';
+      window.location.href = 'index.html';
     } else {
       alert('Неверный ответ. Попробуйте ещё раз.');
       // Генерируем новую капчу
