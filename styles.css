@@ -7,6 +7,39 @@ body {
     color: #fff;
 }
 
+.navigation {
+    border: none;
+    padding: 0;
+}
+.contact {
+    background-color: rgba(51, 51, 51, 0.5); /* Фоновый цвет */
+    padding: 10px; /* Отступы */
+}
+
+#how-it-works {
+    
+   
+    border: none; /* Убираем рамку */
+    padding: 0; /* Убираем отступы */
+}
+#applications {
+    border: none; /* Убираем рамку */
+    padding: 0; /* Убираем отступы */
+}
+#voice-characteristics {
+    border: none; /* Убираем рамку */
+    padding: 0; /* Убираем отступы */
+}
+#emotions {
+    border: none; /* Убираем рамку */
+    padding: 0; /* Убираем отступы */
+}
+#contact {
+    border: none; /* Убираем рамку */
+    padding: 0; /* Убираем отступы */
+}
+
+
 div {
     border: solid 1px #fff;
     padding: 10px;
@@ -190,5 +223,4 @@ td {
         background-color: rgba(51, 51, 51, 0.5);
     }
 }
-
 
